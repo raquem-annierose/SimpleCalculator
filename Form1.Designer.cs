@@ -35,7 +35,12 @@
             txtSecondNumber = new TextBox();
             lblResultText = new Label();
             lblResult = new Label();
-            button1 = new Button();
+            btnAdd = new Button();
+            btnSubtract = new Button();
+            btnMultiply = new Button();
+            btnDivide = new Button();
+            btnClear = new Button();
+            btnExit = new Button();
             SuspendLayout();
             // 
             // lblTitle
@@ -84,7 +89,7 @@
             // lblResultText
             // 
             lblResultText.AutoSize = true;
-            lblResultText.Location = new Point(67, 269);
+            lblResultText.Location = new Point(25, 256);
             lblResultText.Name = "lblResultText";
             lblResultText.Size = new Size(52, 20);
             lblResultText.TabIndex = 5;
@@ -94,27 +99,84 @@
             // lblResult
             // 
             lblResult.AutoSize = true;
-            lblResult.Location = new Point(125, 269);
+            lblResult.Location = new Point(74, 256);
             lblResult.Name = "lblResult";
             lblResult.Size = new Size(17, 20);
             lblResult.TabIndex = 6;
             lblResult.Text = "0";
+            lblResult.Click += lblResult_Click;
             // 
-            // button1
+            // btnAdd
             // 
-            button1.Location = new Point(48, 177);
-            button1.Name = "button1";
-            button1.Size = new Size(94, 29);
-            button1.TabIndex = 7;
-            button1.Text = "btnAdd";
-            button1.UseVisualStyleBackColor = true;
+            btnAdd.Location = new Point(25, 167);
+            btnAdd.Name = "btnAdd";
+            btnAdd.Size = new Size(94, 29);
+            btnAdd.TabIndex = 7;
+            btnAdd.Text = "Add";
+            btnAdd.UseVisualStyleBackColor = true;
+            btnAdd.Click += btnAdd_Click;
+            // 
+            // btnSubtract
+            // 
+            btnSubtract.Location = new Point(148, 167);
+            btnSubtract.Name = "btnSubtract";
+            btnSubtract.Size = new Size(94, 29);
+            btnSubtract.TabIndex = 8;
+            btnSubtract.Text = "Subtract";
+            btnSubtract.UseVisualStyleBackColor = true;
+            btnSubtract.Click += btnSubtract_Click;
+            // 
+            // btnMultiply
+            // 
+            btnMultiply.Location = new Point(23, 202);
+            btnMultiply.Name = "btnMultiply";
+            btnMultiply.Size = new Size(94, 29);
+            btnMultiply.TabIndex = 9;
+            btnMultiply.Text = "Multiply";
+            btnMultiply.UseVisualStyleBackColor = true;
+            btnMultiply.Click += btnMultiply_Click;
+            // 
+            // btnDivide
+            // 
+            btnDivide.Location = new Point(148, 202);
+            btnDivide.Name = "btnDivide";
+            btnDivide.Size = new Size(94, 29);
+            btnDivide.TabIndex = 10;
+            btnDivide.Text = "Divide";
+            btnDivide.UseVisualStyleBackColor = true;
+            btnDivide.Click += btnDivide_Click;
+            // 
+            // btnClear
+            // 
+            btnClear.Location = new Point(23, 288);
+            btnClear.Name = "btnClear";
+            btnClear.Size = new Size(94, 29);
+            btnClear.TabIndex = 11;
+            btnClear.Text = "Clear";
+            btnClear.UseVisualStyleBackColor = true;
+            btnClear.Click += btnClear_Click;
+            // 
+            // btnExit
+            // 
+            btnExit.Location = new Point(142, 288);
+            btnExit.Name = "btnExit";
+            btnExit.Size = new Size(94, 29);
+            btnExit.TabIndex = 12;
+            btnExit.Text = "Exit";
+            btnExit.UseVisualStyleBackColor = true;
+            btnExit.Click += btnExit_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(482, 453);
-            Controls.Add(button1);
+            Controls.Add(btnExit);
+            Controls.Add(btnClear);
+            Controls.Add(btnDivide);
+            Controls.Add(btnMultiply);
+            Controls.Add(btnSubtract);
+            Controls.Add(btnAdd);
             Controls.Add(lblResult);
             Controls.Add(lblResultText);
             Controls.Add(txtSecondNumber);
@@ -142,6 +204,11 @@
         private TextBox txtSecondNumber;
         private Label lblResultText;
         private Label lblResult;
-        private Button button1;
+        private Button btnAdd;
+        private Button btnSubtract;
+        private Button btnMultiply;
+        private Button btnDivide;
+        private Button btnClear;
+        private Button btnExit;
     }
 }
