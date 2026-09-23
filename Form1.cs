@@ -11,5 +11,15 @@ namespace SimpleCalculator
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblResultText_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
